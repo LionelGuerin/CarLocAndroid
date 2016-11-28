@@ -37,11 +37,11 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        this.etFirstName = (EditText)view.findViewById(R.id.firstName);
-        this.etLastName = (EditText)view.findViewById(R.id.lastName);
-        this.etUserName = (EditText)view.findViewById(R.id.username);
-        this.etPassword = (EditText)view.findViewById(R.id.password);
-        this.btSave = (Button)view.findViewById(R.id.btSave);
+        this.etFirstName = (EditText) view.findViewById(R.id.firstName);
+        this.etLastName = (EditText) view.findViewById(R.id.lastName);
+        this.etUserName = (EditText) view.findViewById(R.id.username);
+        this.etPassword = (EditText) view.findViewById(R.id.password);
+        this.btSave = (Button) view.findViewById(R.id.btSave);
 
         User user = this.getUserInPreferences();
 
@@ -64,8 +64,7 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
-    private void saveUserInPreference(User user)
-    {
+    private void saveUserInPreference(User user) {
         SharedPreferences settings = this.getActivity().getSharedPreferences("carloc", Context.MODE_PRIVATE);
 
         SharedPreferences.Editor editor = settings.edit();
@@ -77,8 +76,7 @@ public class HomeFragment extends Fragment {
         editor.commit();
     }
 
-    private User getUserInPreferences()
-    {
+    private User getUserInPreferences() {
         User user = new User();
 
         SharedPreferences settings = this.getActivity().getSharedPreferences("carloc", Context.MODE_PRIVATE);

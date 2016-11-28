@@ -26,11 +26,11 @@ public class UserSQLiteAdapter {
     private SQLiteDatabase db;
 
     private static final String[] COLUMNS = new String[]{
-        UserSQLiteAdapter.ID,
-        UserSQLiteAdapter.FIRSTNAME,
-        UserSQLiteAdapter.LASTNAME,
-        UserSQLiteAdapter.USERNAME,
-        UserSQLiteAdapter.PASSWORD
+            UserSQLiteAdapter.ID,
+            UserSQLiteAdapter.FIRSTNAME,
+            UserSQLiteAdapter.LASTNAME,
+            UserSQLiteAdapter.USERNAME,
+            UserSQLiteAdapter.PASSWORD
     };
 
     public static final String SCHEMA = "CREATE TABLE " + UserSQLiteAdapter.TABLE_NAME + "(" +
@@ -45,6 +45,7 @@ public class UserSQLiteAdapter {
         this.db = helper.open();
 
     }
+
     public User getById(int id) {
         User user = null;
 
@@ -54,7 +55,7 @@ public class UserSQLiteAdapter {
         Cursor cursor = this.db.query(UserSQLiteAdapter.TABLE_NAME, COLUMNS,
                 whereClause, whereArgs, null, null, null);
 
-        if(cursor.moveToFirst()) {
+        if (cursor.moveToFirst()) {
             user = new User();
             user.setId(cursor.getColumnIndex(UserSQLiteAdapter.ID));
             user.setFirstName(cursor.getString(cursor.getColumnIndex(UserSQLiteAdapter.FIRSTNAME)));
@@ -73,7 +74,7 @@ public class UserSQLiteAdapter {
         Cursor cursor = this.db.query(UserSQLiteAdapter.TABLE_NAME, COLUMNS,
                 null, null, null, null, null);
 
-        if(cursor.moveToFirst()) {
+        if (cursor.moveToFirst()) {
             users = new ArrayList<User>();
 
             do {
