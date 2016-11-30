@@ -1,7 +1,19 @@
 <resources>
-    <string name="app_name">CarLoc App</string>
+    <string name="app_name">CarLoc</string>
+
+    <string name="firstname">Prénom</string>
+    <string name="lastname">Nom</string>
+    <string name="username">Pseudonyme</string>
+    <string name="password">Mot de passe</string>
+    <string name="save">sauvegarder</string>
+
+    <string name="user_firstname">Prénom</string>
+    <string name="user_lastname">Nom</string>
+
+    <string name="user_vehicule_list">Liste de véhicule</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="save">sauvegarder</string>
+
 </resources>

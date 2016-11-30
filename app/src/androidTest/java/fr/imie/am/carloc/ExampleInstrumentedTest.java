@@ -1,4 +1,4 @@
-package fr.imie.bmille.carloc;
+package fr.imie.am.carloc;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("fr.imie.bmille.carloc", appContext.getPackageName());
+        assertEquals("fr.imie.am.carloc", appContext.getPackageName());
     }
 }

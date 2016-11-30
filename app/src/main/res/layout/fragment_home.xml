@@ -2,52 +2,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fr.imie.bmille.carloc.view.HomeFragment">
-
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Prénom"
-        android:ems="10"
-        android:id="@+id/firstName" />
+    tools:context="fr.imie.am.carloc.view.HomeFragment">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Nom"
         android:ems="10"
-        android:id="@+id/lastName"
-        android:layout_below="@+id/firstName"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etFirstname"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/firstname" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:layout_below="@id/lastName"
-        android:text="Pseudonyme"
         android:ems="10"
-        android:id="@+id/username" />
+        android:layout_below="@+id/etFirstname"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etLastname"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/lastname" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etLastname"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etUsername"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/username" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:layout_below="@id/username"
         android:ems="10"
-        android:id="@+id/password"
-        android:text="password" />
+        android:layout_below="@+id/etUsername"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etPassword"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/password" />
 
     <Button
         android:text="@string/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="13dp"
         android:id="@+id/btSave"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true" />

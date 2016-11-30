@@ -1,4 +1,4 @@
-package fr.imie.bmille.carloc;
+package fr.imie.am.carloc;
 
 import org.junit.Test;
 

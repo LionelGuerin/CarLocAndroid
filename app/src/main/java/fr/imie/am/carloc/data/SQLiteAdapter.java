@@ -1,20 +1,19 @@
-package fr.imie.bmille.carloc.data;
+package fr.imie.am.carloc.data;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by bmille on 28/11/2016.
+ * Created by tact on 28/11/16.
  */
 
 public class SQLiteAdapter {
 
-    private SQLiteDatabase db;
+    protected SQLiteDatabase db;
 
     public SQLiteAdapter(Context context) {
         CarLocSQLiteOpenHelper helper = new CarLocSQLiteOpenHelper(context);
         this.db = helper.open();
-
     }
+
 }
